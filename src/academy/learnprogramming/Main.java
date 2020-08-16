@@ -58,6 +58,20 @@ public class Main {
       int myIntValue = 5;
       float myFloatValue = (float) 5.25;
       double myDouble = 5d;
+
+      double numberOfPounds = 200d;
+      double convertedKg = numberOfPounds * 0.45359237d;
+      System.out.println("Converted kilograms = " + convertedKg);
+
+      double pi = 3.1415927d;
+      double anotherNumber = 3_000_000.4_567_890d;
+      System.out.println(pi);
+      System.out.println(convertedKg);
+
+      char myChar = 'D';
+      char myUnicodeChar = '\u0044';
+      System.out.println(myChar);
+      System.out.println(myUnicodeChar);
     }
 
 
