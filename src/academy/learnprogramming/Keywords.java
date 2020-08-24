@@ -17,9 +17,7 @@ public class Keywords {
     int score = 800;
     int levelCompleted = 5;
     int bonus = 100;
-    int score2 = 10000;
-    int levelCompleted2 = 8;
-    int bonus2 = 200;
+    calculateScore(gameOver, score, levelCompleted, bonus);
     /*if (score < 5000 && score > 1000) {
       System.out.println("Your score was less than 5000 but greater than 1000");
     } else if (score<1000) {
@@ -28,15 +26,17 @@ public class Keywords {
     } else {
       System.out.println("Got here");
     }*/
-    if (gameOver) {
-      int finalScore = score + (levelCompleted *bonus);
-      System.out.println("Your final score was " + finalScore );
-    }
-    if (gameOver){
-      int finalScore = score2 + (levelCompleted2 * bonus2);
-      System.out.println("Your final score was " + finalScore);
-    }
 
+  }
+  public static int calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
+
+    if (gameOver) {
+      int finalScore = score + (levelCompleted * bonus);
+      System.out.println("Your final score was " + finalScore);
+      return finalScore;
+    }else {
+      return -1;
+    }
   }
 
 }
