@@ -11,7 +11,7 @@ public class OperatorsChallenge {
 
     double d = c % 40.00d; //
     System.out.println("The remainder is " + d);
-
+ 
     boolean result = (d == 0) ? true : false;
     System.out.println("The result is " + result);
 
